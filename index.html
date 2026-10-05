@@ -250,10 +250,10 @@
             drawCrosswalk(x, y, crosswalks[coord].hasPedestrian, crosswalks[coord].vertical);
           }
 
-          // Etiqueta de coordenada
-          ctx.fillStyle = buildings.includes(coord) ? '#64748b' : '#94a3b8';
-          ctx.font = '10px sans-serif';
-          ctx.fillText(coord, x + 4, y + 12);
+          // Etiqueta de coordenada oculta para no mostrar el texto en el plano
+          // ctx.fillStyle = buildings.includes(coord) ? '#64748b' : '#94a3b8';
+          // ctx.font = '10px sans-serif';
+          // ctx.fillText(coord, x + 4, y + 12);
 
           // Entidades de control
           if (forbidden.includes(coord)) {
